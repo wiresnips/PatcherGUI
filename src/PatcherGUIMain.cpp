@@ -26,7 +26,7 @@
 #include <functional>
 #include <algorithm>
 
-#define COOKED_DIR "/xcomgame/cookedpcconsole"
+#define COOKED_DIR "/XComGame/CookedPCConsole"
 #define XCOMGAME_EXE "/Binaries/Win32/XComGame.exe"
 #define XCOMEW_EXE "/Binaries/Win32/XComEW.exe"
 
@@ -955,7 +955,7 @@ void PatcherGUIFrame::OnShowDebugLog(wxCommandEvent& event)
 
 void PatcherGUIFrame::OnOpenConfigFolder(wxCommandEvent& event)
 {
-    wxString configPath = TextCtrl1->GetValue() + "/xcomgame/config";
+    wxString configPath = TextCtrl1->GetValue() + "/XComGame/Config";
 
     if (!wxDirExists(configPath))
     {
